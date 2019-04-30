@@ -1,0 +1,27 @@
+[
+	{
+		"uid":"",
+		"staffer_num":"",
+		"staffer_names":"",
+		"department_company":"",
+		"department_name":"",
+		"department_id":"",
+		"superior":"",
+		"apply_type":"",
+		"leave_type":"",
+		"begin_time":"",
+		"end_time":"",
+		"time":"",
+		"location":"",
+		"truely_punch_time":"",
+		"reason":"",
+		"attachment":"",
+		"approver":"",
+		"approver_uid":"",
+		"approve_status":"",
+	},
+	{
+
+	},
+
+]

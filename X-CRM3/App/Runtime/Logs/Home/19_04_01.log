@@ -1,0 +1,1287 @@
+[ 2019-04-01T10:30:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-04-01T10:30:02+08:00 ] 127.0.0.1 /index.php?s=/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:07+08:00 ] 127.0.0.1 /index.php?s=/Home/Public/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xy_user` SET `logintime`='2019-04-01 10:30:07',`loginip`='127.0.0.1',`logins`=logins+1,`update_time`='1554085807' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','登录成功！','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36','/index.php?s=/Home/Public/Login.html','2019-04-01 10:30:07','127.0.0.1') [ RunTime:0.0000s ]
+
+[ 2019-04-01T10:30:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `update_time` > 1554085207 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE `viewtime` < '2000-01-01' AND `juid` = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=160 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=161 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=161 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=162 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=162 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=163 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=163 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=164 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=164 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=165 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=165 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=166 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=166 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=168 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=168 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=172 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=172 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=175 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=175 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=1 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=119 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=119 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=8 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=125 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=125 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=131 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=131 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=135 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=158 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=158 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=136 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=136 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=142 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=142 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=159 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=159 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=147 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=147 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=148 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=148 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=149 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=150 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=150 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=154 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=154 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=182 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=182 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=113 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=209 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=209 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=210 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=210 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=199 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=199 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=183 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=183 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=190 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=190 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=202 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=202 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=118 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=118 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=7 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=9 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=22 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=22 ) ORDER BY sort  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=24 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=24 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=21 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=21 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=13 ) ORDER BY sort  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=179 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=179 ) ORDER BY sort  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:07+08:00 ] 127.0.0.1 /index.php?s=/Home/index/main.html&_=1554085807610
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 79 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 108 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2019-03-25' AND `xiaci` <= '2019-05-01'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2019-03-25' AND `jztime` <= '2019-05-01'  ) LIMIT 5   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:11+08:00 ] 127.0.0.1 /index.php/home/renwu/index?_=1554085811321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_renwu` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_renwu` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `jieguo` FROM `xy_renwu` WHERE `jieguo` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55456ce155f0f04c2eddc96c3b1829e9.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55456ce155f0f04c2eddc96c3b1829e9.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55456ce155f0f04c2eddc96c3b1829e9.php 第 9 行.
+NOTIC: [8] Undefined index: jieguo D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55456ce155f0f04c2eddc96c3b1829e9.php 第 9 行.
+NOTIC: [8] Undefined index: jieguo D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55456ce155f0f04c2eddc96c3b1829e9.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:11+08:00 ] 127.0.0.1 /index.php/home/quxiangs/index?_=1554085811910
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_quxiang` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_quxiang` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_quxiang` WHERE `type` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\ffe38944e45d957dc9b517fa28927dc6.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\ffe38944e45d957dc9b517fa28927dc6.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\ffe38944e45d957dc9b517fa28927dc6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\ffe38944e45d957dc9b517fa28927dc6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\ffe38944e45d957dc9b517fa28927dc6.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0010s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:13+08:00 ] 127.0.0.1 /index.php/home/renwu/add?_=1554085813787
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 11 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\95c0a3c27d022f50f1a0d05732c1ba55.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\RenwuController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RenwuController.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:13+08:00 ] 127.0.0.1 /index.php?s=/Home/Public/attfile/attid/1554085813/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_files` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_files` WHERE ( attid=1554085813 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:14+08:00 ] 127.0.0.1 /index.php/home/huibao/index?_=1554085814228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_huibao` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_huibao` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_huibao` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_huibao` [ RunTime:0.0030s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_huibao` WHERE `type` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\b657e92d8cae575e91fcc6fdb58e00e6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:15+08:00 ] 127.0.0.1 /index.php/home/wendang/index?_=1554085814960
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_wendang` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_wendang` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_wendang` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_wendang` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_wendang` WHERE `type` <> '' AND `uid` = '1'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e36465556e36edc22babb1635082b7c4.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e36465556e36edc22babb1635082b7c4.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e36465556e36edc22babb1635082b7c4.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e36465556e36edc22babb1635082b7c4.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e36465556e36edc22babb1635082b7c4.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:16+08:00 ] 127.0.0.1 /index.php?s=/Home/Wendang/add/navTabId/Wendang&_=1554085816358
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 11 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\045135f9457281a12ab7ddd594d567d6.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WendangController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\WendangController.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:16+08:00 ] 127.0.0.1 /index.php?s=/Home/Public/attfile/attid/1554085816/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_files` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_files` WHERE ( attid=1554085816 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:18+08:00 ] 127.0.0.1 /index.php?s=/Home/Public/attfile/attid/1554085816/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_files` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_files` WHERE ( attid=1554085816 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:20+08:00 ] 127.0.0.1 /index.php/home/msg/index?_=1554085820077
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_msg` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_msg` WHERE `type` <> ''  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55e073bc1769c8ed9563e0e2709c0703.php 第 8 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55e073bc1769c8ed9563e0e2709c0703.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55e073bc1769c8ed9563e0e2709c0703.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55e073bc1769c8ed9563e0e2709c0703.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\55e073bc1769c8ed9563e0e2709c0703.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:21+08:00 ] 127.0.0.1 /index.php/home/tongzhi/index?_=1554085821112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_tongzhi` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_tongzhi` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a0b2f3e98693b5469cbb8aec7efecb6c.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a0b2f3e98693b5469cbb8aec7efecb6c.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a0b2f3e98693b5469cbb8aec7efecb6c.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:21+08:00 ] 127.0.0.1 /index.php/home/wdtxl/index?_=1554085821909
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_wdtxl` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_wdtxl` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_wdtxl` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_wdtxl` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `leixing` FROM `xy_wdtxl` WHERE `leixing` <> ''  [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_wdtxl` WHERE `type` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+NOTIC: [8] Undefined index: leixing D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+NOTIC: [8] Undefined index: leixing D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\e481f516035ea73787206e95c2e83bb5.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:23+08:00 ] 127.0.0.1 /index.php?s=/Home/Wdtxl/add/navTabId/Wdtxl&_=1554085823861
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 11 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f48f95aaff5bfc3a84f279b83c3af6c3.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\WdtxlController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\WdtxlController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:29+08:00 ] 127.0.0.1 /index.php/home/ggtxl/index?_=1554085829834
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_wdtxl` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_wdtxl` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_wdtxl` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_wdtxl` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `leixing` FROM `xy_wdtxl` WHERE `leixing` <> ''  [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_wdtxl` WHERE `type` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a800e9d16e2ded44e0b8a051d327c439.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a800e9d16e2ded44e0b8a051d327c439.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a800e9d16e2ded44e0b8a051d327c439.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a800e9d16e2ded44e0b8a051d327c439.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\a800e9d16e2ded44e0b8a051d327c439.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:31+08:00 ] 127.0.0.1 /index.php/home/dwtxl/index?_=1554085831343
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_user` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `depname` FROM `xy_user`  [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `posname` FROM `xy_user`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 8 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 12 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\036d3cfc49a8e25cc545f0409a5fc7bc.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:35+08:00 ] 127.0.0.1 /index.php/home/chanpin/index?_=1554085835569
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_chanpin` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_chanpin` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_chanpin` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_chanpin` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `fenlei` FROM `xy_chanpin` WHERE `fenlei` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 8 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:37+08:00 ] 127.0.0.1 /index.php?s=/Home/Chanpin/add/navTabId/Chanpin&_=1554085837516
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c66ecffd065c3e82979f057bb98e5dc5.php 第 11 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\ChanpinController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\ChanpinController.class.php 第 48 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:49+08:00 ] 127.0.0.1 /index.php/home/ruku/add?_=1554085849064
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\758d3a1330517f677384b6454d9a318e.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\758d3a1330517f677384b6454d9a318e.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\758d3a1330517f677384b6454d9a318e.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\758d3a1330517f677384b6454d9a318e.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\RukuController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 58 行.
+NOTIC: [8] Undefined index: xbianhao D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 59 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 78 行.
+NOTIC: [8] Undefined variable: shuliang D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: title D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 80 行.
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:52+08:00 ] 127.0.0.1 /index.php/home/ruku/dshenhe?_=1554085852682
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xy_ruku` WHERE (  `id` <> '0' ) AND `shenhe` <> '审核通过'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 4 行.
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined variable: shenhelist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 70 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 70 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 72 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 72 行.
+NOTIC: [8] Undefined variable: currentPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:30:53+08:00 ] 127.0.0.1 /index.php/home/ruku/index?_=1554085853928
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_ruku` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_ruku` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `shenhe` FROM `xy_ruku` WHERE `shenhe` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\026136e807c021f18f74f7741fe9bf9c.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:30:55+08:00 ] 127.0.0.1 /index.php/home/rukus/index?_=1554085855825
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_rukus` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_rukus` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_rukus` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_rukus` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `fenlei` FROM `xy_rukus` WHERE `fenlei` <> ''  [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `shenhe` FROM `xy_rukus` WHERE `shenhe` <> ''  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+NOTIC: [8] Undefined index: shenhe D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\750e8ef483daa6e192ba3b1119a60b71.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:31:03+08:00 ] 127.0.0.1 /index.php?s=/Home/Ruku/shenhe/id/31/navTabId/Ruku&_=1554085863221
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0010s ]
+SQL: SELECT `shenhe` FROM `xy_ruku` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_shenhe` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xy_shenhe` WHERE `xid` = 31 AND `type` = 'Ruku'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\36bd98368de7821c218ccbc6e66b1f8f.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\36bd98368de7821c218ccbc6e66b1f8f.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\36bd98368de7821c218ccbc6e66b1f8f.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:31:05+08:00 ] 127.0.0.1 /index.php?s=/Home/Ruku/edit/id/31/navTabId/Ruku&_=1554085865854
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_rukus` [ RunTime:0.0010s ]
+SQL: UPDATE `xy_rukus` SET `edit`='0' WHERE `xid` = 31 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_ruku` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: stype D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fa92391e8ff606feca1dde2d411fe2ac.php 第 14 行.
+SQL: SELECT * FROM `xy_rukus` WHERE `xid` = 31  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\RukuController::_after_edit() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 96 行.
+NOTIC: [8] Undefined index: xbianhao D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 98 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `xy_rukus` [ RunTime:0.0020s ]
+SQL: DELETE FROM `xy_rukus` WHERE `edit` = 0 AND `xid` = 0 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: shuliang D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: title D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\RukuController.class.php 第 127 行.
+SQL: SHOW COLUMNS FROM `xy_ruku` [ RunTime:0.0020s ]
+SQL: UPDATE `xy_ruku` SET `title`='' WHERE `id` = 0 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:10+08:00 ] 127.0.0.1 /index.php/home/chanpin/baojing?_=1554085870251
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_chanpin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xy_chanpin` WHERE (  `id` <> '0' ) AND `kucun` <= 10  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 4 行.
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 8 行.
+NOTIC: [8] Undefined variable: fenleilist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 65 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 65 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 67 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 67 行.
+NOTIC: [8] Undefined variable: currentPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:11+08:00 ] 127.0.0.1 /index.php/home/chanpin/index?_=1554085871044
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_chanpin` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_chanpin` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_chanpin` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xy_chanpin` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `fenlei` FROM `xy_chanpin` WHERE `fenlei` <> ''  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 8 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+NOTIC: [8] Undefined index: fenlei D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\c68ab9f2de9b8957130ace9144663b8a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:12+08:00 ] 127.0.0.1 /index.php/home/fahuo/index?_=1554085871987
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_fahuo` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_fahuo` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\5ec26db223ba1cc20627982c058e551a.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\5ec26db223ba1cc20627982c058e551a.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\5ec26db223ba1cc20627982c058e551a.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:16+08:00 ] 127.0.0.1 /index.php/home/shou/dshenhe?_=1554085876218
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_shou` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xy_shou` WHERE (  `id` <> '0' ) AND `shenhe` <> '审核通过'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 4 行.
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined variable: typelist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined variable: shenhelist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined variable: jingbanlist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 10 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 75 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 75 行.
+NOTIC: [8] Undefined variable: totalCount D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 77 行.
+NOTIC: [8] Undefined variable: numPerPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 77 行.
+NOTIC: [8] Undefined variable: currentPage D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T10:31:16+08:00 ] 127.0.0.1 /index.php/home/shou/add?_=1554085876676
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: id D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 3 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 7 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 9 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 10 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 12 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 13 行.
+NOTIC: [8] Undefined variable: Rs D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\f3e6817aa154f8aa29c79679850fb5ff.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\ShouController::_after_add() D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Home\Controller\ShouController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:16+08:00 ] 127.0.0.1 /index.php?s=/Home/Public/attfile/attid/1554085876/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_files` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_files` WHERE ( attid=1554085876 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T10:31:17+08:00 ] 127.0.0.1 /index.php/home/shou/index?_=1554085877181
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_shou` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: order D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 141 行.
+NOTIC: [8] Undefined variable: sort D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 151 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Common\Controller\BaseController.class.php 第 159 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_shou` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xy_shou` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xy_shou` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT  `type` FROM `xy_shou` WHERE `type` <> ''  [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `jingban` FROM `xy_shou` WHERE `jingban` <> ''  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 8 行.
+NOTIC: [8] Undefined index: time1 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined index: time2 D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined index: type D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined variable: shenhelist D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 9 行.
+NOTIC: [8] Undefined index: jingban D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 10 行.
+NOTIC: [8] Undefined index: jingban D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 10 行.
+NOTIC: [8] Undefined index: jingban D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 10 行.
+NOTIC: [8] Undefined index: jingban D:\phpstudy\PHPTutorial\WWW\X-CRM3\X-CRM3\App\Runtime\Cache\Home\fc977124d788399cdd08f15688d557a1.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
